@@ -1,0 +1,20 @@
+##
+##  Initialize
+##
+##      This file should be first in line to be read by auditd
+##
+
+##  Remove all existing rules
+-D
+
+##  Buffer Size
+-b 8192
+
+##  Failure Mode:
+##    0: silent 
+##    1: printk (print a failure message) 
+##    2: panic (halt the system)
+-f 1
+
+##  Ignore errors
+-i

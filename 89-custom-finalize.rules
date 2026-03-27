@@ -1,0 +1,8 @@
+##
+##  Initialize
+##
+##      This file would be read last by auditd
+##
+
+##  Set the config to be immutable
+##-e 2
