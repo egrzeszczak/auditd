@@ -1,0 +1,2 @@
+## Passwd
+-w /usr/bin/passwd -p x -k passwd_modification

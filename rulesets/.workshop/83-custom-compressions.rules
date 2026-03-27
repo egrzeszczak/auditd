@@ -1,0 +1,57 @@
+## T1002 Data Compressed
+
+-w /usr/bin/zip -p x -k Data_Compressed
+-w /usr/bin/gzip -p x -k Data_Compressed
+-w /usr/bin/tar -p x -k Data_Compressed
+-w /usr/bin/bzip2 -p x -k Data_Compressed
+
+-w /usr/bin/lzip -p x -k Data_Compressed
+-w /usr/local/bin/lzip -p x -k Data_Compressed
+
+-w /usr/bin/lz4 -p x -k Data_Compressed
+-w /usr/local/bin/lz4 -p x -k Data_Compressed
+
+-w /usr/bin/lzop -p x -k Data_Compressed
+-w /usr/local/bin/lzop -p x -k Data_Compressed
+
+-w /usr/bin/plzip -p x -k Data_Compressed
+-w /usr/local/bin/plzip -p x -k Data_Compressed
+
+-w /usr/bin/pbzip2 -p x -k Data_Compressed
+-w /usr/local/bin/pbzip2 -p x -k Data_Compressed
+
+-w /usr/bin/lbzip2 -p x -k Data_Compressed
+-w /usr/local/bin/lbzip2 -p x -k Data_Compressed
+
+-w /usr/bin/pixz -p x -k Data_Compressed
+-w /usr/local/bin/pixz -p x -k Data_Compressed
+
+-w /usr/bin/pigz -p x -k Data_Compressed
+-w /usr/local/bin/pigz -p x -k Data_Compressed
+-w /usr/bin/unpigz -p x -k Data_Compressed
+-w /usr/local/bin/unpigz -p x -k Data_Compressed
+
+-w /usr/bin/zstd -p x -k Data_Compressed
+-w /usr/local/bin/zstd -p x -k Data_Compressed
+
+## gzexe
+-a always,exit -F arch=b32 -F path=/usr/bin/gzexe -F perm=x -F key=Data_Compressed
+-a always,exit -F arch=b64 -F path=/usr/bin/gzexe -F perm=x -F key=Data_Compressed
+
+-a always,exit -F arch=b32 -F path=/usr/sbin/gzexe -F perm=x -F key=Data_Compressed
+-a always,exit -F arch=b64 -F path=/usr/sbin/gzexe -F perm=x -F key=Data_Compressed
+
+### macOS
+
+-a always,exit -F arch=b32 -F path=/usr/local/bin/gzexe -F perm=x -F key=Data_Compressed
+-a always,exit -F arch=b64 -F path=/usr/local/bin/gzexe -F perm=x -F key=Data_Compressed
+
+### https://www.rkeene.org/oss/dact
+-a always,exit -F arch=b32 -F path=/usr/bin/dact -F perm=x -F key=Data_Compressed
+-a always,exit -F arch=b64 -F path=/usr/bin/dact -F perm=x -F key=Data_Compressed
+
+-a always,exit -F arch=b32 -F path=/usr/sbin/dact -F perm=x -F key=Data_Compressed
+-a always,exit -F arch=b64 -F path=/usr/sbin/dact -F perm=x -F key=Data_Compressed
+
+-a always,exit -F arch=b32 -F path=/usr/local/bin/dact -F perm=x -F key=Data_Compressed
+-a always,exit -F arch=b64 -F path=/usr/local/bin/dact -F perm=x -F key=Data_Compressed

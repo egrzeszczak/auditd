@@ -1,0 +1,13 @@
+# Systemd
+-w /bin/systemctl -p x -k systemd
+-w /etc/systemd/ -p wa -k systemd
+-w /usr/lib/systemd -p wa -k systemd
+
+## https://systemd.network/systemd.generator.html
+-w /etc/systemd/system-generators/ -p wa -k systemd_generator
+-w /usr/local/lib/systemd/system-generators/ -p wa -k systemd_generator
+-w /usr/lib/systemd/system-generators -p wa -k systemd_generator
+
+-w /etc/systemd/user-generators/ -p wa -k systemd_generator
+-w /usr/local/lib/systemd/user-generators/ -p wa -k systemd_generator
+-w /lib/systemd/system-generators/ -p wa -k systemd_generator

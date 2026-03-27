@@ -1,0 +1,2 @@
+## Special files
+-a always,exit -F arch=b64 -S mknod -S mknodat -k specialfiles
