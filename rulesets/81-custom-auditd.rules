@@ -4,7 +4,13 @@
 ##      Rules in this file will serve as a self-auditing mechanism and track 
 ##      changes to auditd configuration and track audit utils usage.
 ##
-##  Keys: audit_log, audit_config, audit_utils 
+##  Keys
+##
+##      audit_log:      events related to audit log file access 
+##      audit_config:   events related to audit configuration file actions
+##      audisp_config:  events related to audit dispatcher configuration file actions
+##      audit_utils:    events related to audit utilities usage
+##
 
 ##  Audit the audit logs
 ##  Successful and unsuccessful attempts to read information from the audit records
