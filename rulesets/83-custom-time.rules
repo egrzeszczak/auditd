@@ -1,0 +1,14 @@
+##
+##  Time
+##
+##      Track actions that point to time changes within the operating system.
+##
+##  Keys
+##
+##      time_change:      events related to time changes 
+##
+
+##  Monitor actions that could affect system time
+-a always,exit -F arch=b64 -S adjtimex,settimeofday -F key=time_change
+-a always,exit -F arch=b64 -S clock_settime -F a0=0x0 -F key=time_change
+-a always,exit -F arch=b64 -F path=/etc/localtime -F perm=wa -F key=time_change

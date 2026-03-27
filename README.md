@@ -8,6 +8,7 @@ Best practice configuration for Linux Audit Daemon (`auditd`) based on [Florian 
 |-|-|
 |[80-custom-initialize.rules](./rulesets/80-custom-initialize.rules)|Initialization of auditd ruleset|
 |[81-custom-auditd.rules](./rulesets/81-custom-auditd.rules)|Audit deamon, audit utils usage self-auditing|
+|[83-custom-time.rules](./rulesets/83-custom-time.rules)|Rules that will monitor time changes within the operating system|
 |[89-custom-finalize.rules](./rulesets/89-custom-finalize.rules)|Finalization of auditd ruleset|
 
 ## Additional resources
