@@ -1,6 +1,14 @@
 # auditd
 
-Best practice configuration for Linux Audit Daemon (`auditd`) based on [Florian Roth's GitHub repository](https://github.com/Neo23x0/auditd), split into pluggable rule sets
+Best practice configuration for Linux Audit Daemon (`auditd`) based on [Florian Roth's GitHub repository](https://github.com/Neo23x0/auditd), split into pluggable rule sets.
+
+## Rulesets
+
+|File name|Description|
+|-|-|
+|[80-custom-initialize.rules](./80-custom-initialize.rules)|Initialization of auditd ruleset|
+|[81-custom-auditd.rules](./81-custom-auditd.rules)|Audit deamon, audit utils usage self-auditing|
+|[89-custom-finalize.rules](./89-custom-finalize.rules)|Finalization of auditd ruleset|
 
 ## Additional resources
 
